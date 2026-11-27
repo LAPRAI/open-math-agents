@@ -1,0 +1,20 @@
+name: oma-autopush
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.OMA_PAT }}
+      - name: Open proof PRs for merged statements
+        env:
+          GH_TOKEN: ${{ secrets.OMA_PAT }}
+        run: bash .oma-ready/run.sh

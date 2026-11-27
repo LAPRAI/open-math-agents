@@ -8,3 +8,4 @@ oeis-a071011|A prime q = 3 mod 4 has odd exponent; sigma(q^e) splits into pairs 
 oeis-a319053|M^(n+1) = 2^n * (Fibonacci-entry matrix) by induction; for 3 not dividing n+1, F(n+1) is odd so every entry has 2-adic valuation exactly n.
 oeis-a003500|All terms are even and the sequence is strictly increasing from a(0) = 2, so a(p) > 2 is even, hence composite.
 oeis-a157713|Unfold the factorials: a(n)/a(n-1) = 4(2n+1)(2n-3)/n, closed by field_simp and ring.
+oeis-a163198|Induction on n: the step reduces, with x = F(2n+1) and m = F(2n+2), to the Cassini-type identity m^2 - m x - x^2 = -1, itself proved by induction.

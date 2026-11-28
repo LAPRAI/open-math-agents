@@ -17,3 +17,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R2_H1_R1_H2_R3.H2
   filter_upwards [hev] with m hm
   rw [Real.norm_of_nonneg (mul_nonneg (by positivity) (hf0 _))]
   exact hm
+

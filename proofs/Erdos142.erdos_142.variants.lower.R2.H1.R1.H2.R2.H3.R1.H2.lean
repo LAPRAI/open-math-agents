@@ -48,3 +48,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R2_H1_R1_H2_R2_H3
     _ = ((m : ℝ) ^ 2)⁻¹ := by
         rw [Real.exp_neg, show 2 * Real.log m = Real.log ((m : ℝ) ^ 2) by
           rw [Real.log_pow]; norm_num, Real.exp_log (by positivity)]
+

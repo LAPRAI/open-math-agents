@@ -1,11 +1,2 @@
-oeis-a088883|Mod 3: reversing digits keeps the digit sum, so the number is 2p + 2 mod 3; p = 2 mod 3 makes it a multiple of 3 above 3, p = 3 gives 35, hence p = 1 mod 3 and odd.
-oeis-a001076|Both sides satisfy u(n+2) = 4u(n+1) + u(n); two-step induction from n = 0, 1, closing each step with a linear combination of the recurrences.
-oeis-a134641|Mod b-1 the number is the digit sum b(b-1)/2: for even b >= 4 it is a proper multiple of b-1, for odd b >= 5 a proper multiple of (b-1)/2; so b = 2 or 3, and the six base-3 values give 5, 7, 11, 19 (15, 21 composite).
-oeis-a151341|Combine (n+1)C(n) = 2(2n-1)C(n-1) for Catalan numbers with the Motzkin recurrence (n+2)M(n) = (2n+1)M(n-1) + 3(n-1)M(n-2); the identity is an exact linear combination of the three relations.
-oeis-a141353|For n >= 4 the 0^n terms vanish; the 2^n part cancels since the coefficients vanish at x = 2, and the Catalan part reduces via (j+2)C(j+1) = 2(2j+1)C(j) to the exact combination h3 - 4h2 + 4h1.
-oeis-a141351|For n >= 4 the 0^n terms vanish; the constant part cancels since the coefficients sum to 0, and the Catalan part reduces via (j+2)C(j+1) = 2(2j+1)C(j) to the exact combination h3 - 2h2 + h1.
-oeis-a071011|A prime q = 3 mod 4 has odd exponent; sigma(q^e) splits into pairs q^(2i)(1+q), each divisible by 4; sigma is multiplicative.
-oeis-a319053|M^(n+1) = 2^n * (Fibonacci-entry matrix) by induction; for 3 not dividing n+1, F(n+1) is odd so every entry has 2-adic valuation exactly n.
-oeis-a003500|All terms are even and the sequence is strictly increasing from a(0) = 2, so a(p) > 2 is even, hence composite.
-oeis-a157713|Unfold the factorials: a(n)/a(n-1) = 4(2n+1)(2n-3)/n, closed by field_simp and ring.
 oeis-a163198|Induction on n: the step reduces, with x = F(2n+1) and m = F(2n+2), to the Cassini-type identity m^2 - m x - x^2 = -1, itself proved by induction.
+oeis-a093387|Split n = k+4 by parity of k. Every C(n, floor(n/2)) is rewritten as C(2j, j) or C(2j+1, j); the identities (j+1)C(2j+1, j) = (2j+1)C(2j, j) and C(2j+2, j+1) = 2C(2j+1, j) then close each case by linear_combination (the powers of 2 cancel).

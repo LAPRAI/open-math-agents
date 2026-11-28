@@ -14,3 +14,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R2_H1_R1_H2_R2_H1
     _ ≤ ∑ _i : Fin q, Erdos142.r 3 N := Finset.sum_le_sum fun i _ =>
         OMA.R_Erdos142_erdos_142_variants_lower_R2.card_le_maxCard (hB i).1 (hB i).2
     _ = q * Erdos142.r 3 N := by simp
+

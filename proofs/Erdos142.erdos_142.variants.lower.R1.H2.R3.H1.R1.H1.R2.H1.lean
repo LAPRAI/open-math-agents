@@ -143,3 +143,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R1_H2_R3_H1_R1_H1
   calc A.card ^ 2
       ≤ (A.card + ∑ v ∈ A, (A.filter (fun w => (v, w) ∈ E ∨ (w, v) ∈ E)).card) * B.card := hcard
     _ ≤ (A.card + 2 * E.card) * B.card := Nat.mul_le_mul_right _ (Nat.add_le_add_left hdeg _)
+

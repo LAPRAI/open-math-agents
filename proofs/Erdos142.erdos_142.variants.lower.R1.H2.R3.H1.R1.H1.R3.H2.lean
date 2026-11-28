@@ -218,3 +218,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R1_H2_R3_H1_R1_H1
   calc A.card ^ 2 ≤ (A.card + ∑ v ∈ A, (A.filter (Rel p k A v)).card) * B.card := hcard
     _ ≤ T.card * B.card := Nat.mul_le_mul_right _ (by rw [hD]; omega)
     _ = B.card * T.card := Nat.mul_comm _ _
+

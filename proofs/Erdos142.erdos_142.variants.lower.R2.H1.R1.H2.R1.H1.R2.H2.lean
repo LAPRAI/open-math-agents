@@ -64,3 +64,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R2_H1_R1_H2_R1_H1
       zify [h.le]
       linear_combination h1 - h2
     rw [e]; exact hmem _ (by omega)
+

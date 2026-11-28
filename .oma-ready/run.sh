@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Opens each queued proof PR once its statement is merged upstream (skips ids that already have a proof branch PR).
-R=GuillaumeBAUD-coder/open-math-agents
+R=lefttosolve2/open-math-agents
 git config user.name LAPRAI
 git config user.email 129197914+LAPRAI@users.noreply.github.com
 git remote add upstream https://github.com/$R.git 2>/dev/null

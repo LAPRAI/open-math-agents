@@ -21,7 +21,7 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R2_H1_R1_H2_R2_H3
   filter_upwards [hl.eventually_gt_atTop 0, hp.eventually_ge_atTop (4 / c),
     eventually_ge_atTop 3] with m hl0 hpw hm3
   have hm : (3 : ℝ) ≤ m := by exact_mod_cast hm3
-  have hlogpow : Real.log ((2 : ℝ) ^ m) = m * Real.log 2 := Real.log_pow m 2
+  have hlogpow : Real.log ((2 : ℝ) ^ m) = m * Real.log 2 := by rw [Real.log_pow]
   set ℓ := Real.log (Real.log ((2 : ℝ) ^ m)) with hℓ
   have hkey : 2 * Real.log m ≤ 4 * ℓ := by
     have hpos : 0 < (m : ℝ) * Real.log 2 := by positivity
@@ -48,4 +48,3 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R2_H1_R1_H2_R2_H3
     _ = ((m : ℝ) ^ 2)⁻¹ := by
         rw [Real.exp_neg, show 2 * Real.log m = Real.log ((m : ℝ) ^ 2) by
           rw [Real.log_pow]; norm_num, Real.exp_log (by positivity)]
-

@@ -139,3 +139,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R1_H2_R3_H1_R1_H1
   calc (α / 2) * (p : ℝ) * ((p : ℝ) - 1) ≤ (Good.card : ℝ) := hgood
     _ ≤ (APs.card : ℝ) * (M * M) := by exact_mod_cast hcardG
     _ = (M : ℝ) ^ 2 * (APs.card : ℝ) := by ring
+

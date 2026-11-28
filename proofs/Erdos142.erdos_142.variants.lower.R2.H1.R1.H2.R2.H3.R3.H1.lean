@@ -16,3 +16,4 @@ theorem OMA.solution : OMA.R_Erdos142_erdos_142_variants_lower_R2_H1_R1_H2_R2_H3
   have e : 4 * N = N + (N + (N + N)) := by ring
   rw [e]
   omega
+
